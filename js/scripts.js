@@ -14,36 +14,34 @@ addEventListener("load", function() {
     const input5 = parseInt(document.getElementById("input5").value);
     const total = input1 + input2 + input3 + input4 + input5;
 
-    let result = document.querySelector("span#result");
-
-
-
-
+    let result;
+  document.getElementById("output").innerText = result;  
+//Business Logic
+if (total <= 4 || total === undefined) {
+  document.getElementById("error-message").removeAttribute("class");
+}
+else if (total >=5 && total <= 10) {
+  document.getElementById("result-message").removeAttribute("class");
+  document.getElementById("output").innerText = "JavaScript";
+}
+else if (total > 10 && total <= 20) {
+  document.getElementById("result-message").removeAttribute("class");
+  document.getElementById("output").innerText = "Python";
+}
+else if (total > 20 && total <= 25) {
+  document.getElementById("result-message").removeAttribute("class");
+  document.getElementById("output").innerText = "Rust";
+} 
 //add event listener for reset button to reload page on click
   const reset = document.getElementById("reset-btn");
   reset.addEventListener("click", function() {
     document.location.reload();
   })
+  
+ })  
+}); 
+ 
 
 
-//Business Logic
-if (total <= 4) {
-  document.querySelector("div#error").removeAttribute("class");
-}
-else if (total >=5 && total <= 10) {
-  document.querySelector("div#result").removeAttribute("class");
-  document.querySelector("span#output").innerText = "JavaScript";
-}
-else if (total > 10 && total <= 20) {
-  document.querySelector("div#result").removeAttribute("class");
-  document.querySelector("span#output").innerText = "Python";
-}
-else if (total > 20 && total <= 25) {
-  document.querySelector("div#result").removeAttribute("class");
-  document.querySelector("span#output").innerText = "Rust";
-}
-
-  })
-});
 
 
