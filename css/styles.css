@@ -4,6 +4,7 @@
 
 .button {
   float: right;
+  padding: 5% 10%;
 }
 
 .jumbotron {
@@ -11,6 +12,12 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(172, 107, 9);
   background-color: black;
+}
+
+.display-5 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 32px;
+  color: rgb(172, 107, 9);
 }
 
 

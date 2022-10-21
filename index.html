@@ -15,8 +15,8 @@
   </div>
 
   <div class="container">
-    <h2>Answer these questions to find out the best programming language for you!</h2>
-    <h4 ><em>Select a number from 1-5 for each prompt.</em><br>(1 is low preffered and 5 is highly preffered)<br><em>You can always click the reset button to try again.</em></h4>
+    <h5 class="display-5">Find out the best programming language for you!</h5>
+    <p class="fst-italic">Select a number from 1-5 for each prompt.<br>(1 is low preffered and 5 is highly preffered)<br>You can always click the reset button to try again.</p>
 
     <form>
       <select id="input1" class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
@@ -44,7 +44,7 @@
         <option value="5">Five</option>
       </select>
       <select id="input4" class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
-        <option selected>Goblins</option>
+        <option selected>Candy</option>
         <option value="1">One</option>
         <option value="2">Two</option>
         <option value="3">Three</option>
@@ -61,14 +61,14 @@
       </select>
     
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <button class="btn btn-success btn-lg" type="submit">Submit</button>
-        <button class="btn btn-warning btn-lg" type="reset" id="reset-btn">Reset</button>
-    </div>
+        <button class="btn btn-success me-md-2" type="submit">Submit</button>
+        <button class="btn btn-warning" type="reset" id="reset-btn">Reset</button>
+      </div>
     </form>
 
 
   <div id="result-message" class="hidden">
-    <h1 class="text-success">Your Programming language is</h1><h2 id="output" class="text-info"></h2>
+    <h1 class="text-success">Your programming language is</h1><h2 id="output" class="text-info"></h2>
   </div>
 
   <div id="error-message" class="hidden">
