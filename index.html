@@ -16,7 +16,7 @@
 
   <div class="container">
     <h2>Answer these questions to find out the best programming language for you!</h2>
-    <h4><em>Be sure to select a number from 1-5. Each number can only be used once.</em></h4>
+    <h4><em>Be sure to select a number from 1-5 for each prompt. You can always click the reset button to try again.</em></h4>
 
     <form>
       <select id="input1" class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
@@ -67,8 +67,12 @@
     <button class="btn btn-warning" type="reset" id="reset-btn">Reset</button>
   </div>
 
-  <div id="output" class="hidden">
-  
+  <div id="result" class="hidden">
+    <h1>Your Programming language is<span id="output"></span></h1>
+  </div>
+
+  <div id="error" class="hidden">
+    <h1>Please enter a number for each selection. Reset to try again.</h1>
   </div>
   
 </body>
