@@ -8,10 +8,11 @@
 
 .jumbotron {
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: rgb(226, 177, 43);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(172, 107, 9);
+  background-color: black;
 }
 
-.result-message {
-  text-align: center;
-}
+
+
+

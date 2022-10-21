@@ -3,7 +3,6 @@ addEventListener("load", function() {
   const form = document.querySelector("form")
 
 //add Event Listener to hold form values and convert to numbers
-
   form.addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -16,11 +15,9 @@ addEventListener("load", function() {
 
     let result;
   document.getElementById("output").innerText = result;  
+
 //Business Logic
-if (total <= 4 || total === undefined) {
-  document.getElementById("error-message").removeAttribute("class");
-}
-else if (total >=5 && total <= 10) {
+if (total >=5 && total <= 10) {
   document.getElementById("result-message").removeAttribute("class");
   document.getElementById("output").innerText = "JavaScript";
 }
@@ -31,7 +28,13 @@ else if (total > 10 && total <= 20) {
 else if (total > 20 && total <= 25) {
   document.getElementById("result-message").removeAttribute("class");
   document.getElementById("output").innerText = "Rust";
-} 
+}
+else if (undefined) {
+  document.getElementById("error-message").removeAttribute("class"); 
+}
+else {
+  document.getElementById("error-message").removeAttribute("class"); 
+}
 //add event listener for reset button to reload page on click
   const reset = document.getElementById("reset-btn");
   reset.addEventListener("click", function() {
