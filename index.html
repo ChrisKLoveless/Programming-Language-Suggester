@@ -16,7 +16,7 @@
 
   <div class="container">
     <h2>Answer these questions to find out the best programming language for you!</h2>
-    <h4><em>Be sure to select a number from 1-5 for each prompt. You can always click the reset button to try again.</em></h4>
+    <h4 ><em>Select a number from 1-5 for each prompt.</em><br>(1 is low preffered and 5 is highly preffered)<br><em>You can always click the reset button to try again.</em></h4>
 
     <form>
       <select id="input1" class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
@@ -68,12 +68,14 @@
 
 
   <div id="result-message" class="hidden">
-    <h1>Your Programming language is</h1><p id="output"></p>
+    <h1 class="text-success">Your Programming language is</h1><h2 id="output" class="text-info"></h2>
   </div>
 
   <div id="error-message" class="hidden">
-    <h2>Please enter a number for each selection. Reset to try again.</h2>
+    <h2 class="text-danger">Please enter a number for each selection. Reset to try again.</h2>
   </div>
+
+  <img src="img/halloween-owl.jfif" class="img-thumbnail" alt="A photo of a spooky owl">
 
   </div>  
 </body>
