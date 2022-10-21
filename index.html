@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,28 +16,59 @@
 
   <div class="container">
     <h2>Answer these questions to find out the best programming language for you!</h2>
+    <h4><em>Be sure to select a number from 1-5. Each number can only be used once.</em></h4>
+
     <form>
-      <select class="form-select" aria-label="Default select example">
-        <option selected>Open this select menu</option>
+      <select id="input1" class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+        <option selected>Scary Movies</option>
         <option value="1">One</option>
         <option value="2">Two</option>
         <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="5">Five</option>
       </select>
-      <label></label>
-      <input>
-      <label></label>
-      <input>
-      <label></label>
-      <input>
-      <label></label>
-      <input>
-      <label></label>
-      <input>
+      <select id="input2" class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+        <option selected>Ghosts</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="5">Five</option>
+      </select>
+      <select id="input3" class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+        <option selected>Witches</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="5">Five</option>
+      </select>
+      <select id="input4" class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+        <option selected>Goblins</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="5">Five</option>
+      </select>
+      <select id="input5" class="form-select form-select-lg mb-3" aria-label=".form-select-lg">
+        <option selected>Pumpkins</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="5">Five</option>
+      </select>
     </form>
   </div>
 
-  <div id="output" class="hidden">
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-success" type="submit">Submit</button>
+    <button class="btn btn-warning" type="reset" id="reset-btn">Reset</button>
+  </div>
 
+  <div id="output" class="hidden">
+  
   </div>
   
 </body>

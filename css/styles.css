@@ -2,8 +2,12 @@
   display: none;
 }
 
+.button {
+  float: right;
+}
+
 .jumbotron {
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: blueviolet;
+  color: rgb(226, 177, 43);
 }
